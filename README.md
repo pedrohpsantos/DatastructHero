@@ -1,74 +1,117 @@
 # ✨ DatastructHero
 
-**DatastructHero** é um plano de estudo intensivo de 5 dias focado nos fundamentos da linguagem C e nas estruturas de dados essenciais. Projetado para ser um guia prático e interativo, este projeto ajuda estudantes a solidificar seus conhecimentos através de tópicos diários, tarefas, quizzes e recursos recomendados.
+**DatastructHero** is an intensive 5-day study plan focused on the fundamentals of the C language and essential data structures. Designed as a practical and interactive guide, this project helps students solidify their knowledge through daily topics, tasks, quizzes, and recommended resources.
 
-## 🚀 Funcionalidades
+---
 
-- **Plano de Estudo de 5 Dias:** Conteúdo estruturado para cobrir tópicos chave de C e Estruturas de Dados linearmente.
-- **Tópicos Diários:** Detalhes sobre os conceitos de C e Estruturas de Dados a serem abordados em cada dia.
-- **Objetivos de Aprendizagem:** Metas claras para cada dia de estudo.
-- **Tarefas Práticas:** Sugestões de exercícios divididos por nível de dificuldade (Fácil, Médio, Difícil).
-- **Quizzes Rápidos:** Pequenos testes para verificar a compreensão dos conceitos do dia.
-- **Recursos Recomendados:** Links úteis para tutoriais, playlists de vídeo e ferramentas de visualização/prática.
-- **Visualização de Progresso:** (Se aplicável, baseado no `ChartSection` - pode ser um gráfico de conclusão de tarefas ou tópicos).
-- **Persistência Local:** O progresso (como conclusão de tarefas) é salvo no navegador usando Local Storage.
+## 📋 Table of Contents
 
-## 🛠️ Tecnologias Utilizadas
+- [🚀 Features](#-features)
+- [🛠️ Tech Stack](#️-tech-stack)
+- [▶️ Getting Started](#️-getting-started)
+- [📂 Project Structure](#-project-structure)
+- [🤝 Contributing](#-contributing)
+- [📜 License](#-license)
 
-- **React**
-- **TypeScript**
-- **Vite**
-- **Tailwind CSS**
-- **Chart.js** (para gráficos)
-- **Local Storage API**
+---
 
-## 📦 Estrutura do Projeto
+## 🚀 Features
 
-DatastructHero/
-├── public/
-├── src/
-│ ├── assets/
-│ ├── components/ # Componentes React (DayCard, DayTabs, TaskList,QuizModal, etc.)
-│ ├── constants/ # Dados do plano de estudo (planData.ts)
-│ ├── hooks/ # Hooks customizados (useLocalStorage.ts)
-│ ├── pages/ # Páginas principais (Home.tsx, NotFound.tsx)
-│ ├── styles/ # Arquivos de estilo (tailwind.css)
-│ ├── App.tsx # Componente principal da aplicação
-│ └── main.tsx # Ponto de entrada da aplicação (renderização React)
-├── index.html # Arquivo HTML principal
-├── package.json # Dependências e scripts do projeto
-├── postcss.config.js
-├── README.md # Este arquivo
-├── tailwind.config.js # Configuração do Tailwind CSS
-├── tsconfig.json # Configuração do TypeScript
-├── vite.config.ts # Configuração do Vite
-└── vite-env.d.ts
+DatastructHero offers a range of functionalities to enhance your learning experience:
 
-## ▶️ Como Rodar Localmente
+-   **5-Day Study Plan:** Structured content covering key C and Data Structures topics linearly.
+-   **Daily Topics:** Detailed concepts of C and Data Structures for each day.
+-   **Learning Objectives:** Clear goals for each study day.
+-   **Practical Tasks:** Exercise suggestions categorized by difficulty (Easy, Medium, Hard).
+-   **Quick Quizzes:** Short tests to check understanding of the day's concepts.
+-   **Recommended Resources:** Useful links to tutorials, video playlists, and visualization/practice tools.
+-   **Progress Visualization:** Track your learning progress (e.g., task or topic completion charts using `ChartSection`).
+-   **Local Persistence:** Your progress (like task completion) is saved in the browser using Local Storage.
 
-1.  **Clone o repositório:**
+---
+
+## 🛠️ Tech Stack
+
+This project is built using modern web technologies:
+
+-   **React**
+-   **TypeScript**
+-   **Vite**
+-   **Tailwind CSS**
+-   **Chart.js** (for charts)
+-   **Local Storage API**
+
+---
+
+## ▶️ Getting Started
+
+To run DatastructHero locally, follow these steps:
+
+1.  **Clone the repository:**
     ```bash
-    git clone <https://github.com/pedrohpsantos/DatastructHero.git>
+    git clone [https://github.com/pedrohpsantos/DatastructHero.git](https://github.com/pedrohpsantos/DatastructHero.git)
     cd DatastructHero
     ```
-2.  **Instale as dependências:**
+2.  **Install dependencies:**
+    Choose your preferred package manager:
     ```bash
     npm install
-    # ou yarn install
-    # ou pnpm install
+    # or
+    # yarn install
+    # or
+    # pnpm install
     ```
-3.  **Inicie o servidor de desenvolvimento:**
+3.  **Start the development server:**
     ```bash
     npm run dev
-    # ou yarn dev
-    # ou pnpm dev
+    # or
+    # yarn dev
+    # or
+    # pnpm dev
     ```
-4.  Abra seu navegador e acesse `http://localhost:5173` (ou a porta indicada pelo Vite).
+4.  Open your browser and navigate to `http://localhost:5173` (or the port indicated by Vite).
 
-## 🤝 Contribuições
+---
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues para sugestões ou reportar bugs, ou enviar Pull Requests com melhorias.
+## 📂 Project Structure
 
-## Licença
+The project follows a standard Vite + React + TypeScript structure:
+DatastructHero/
+├── public/                   # Static assets
+├── src/
+│   ├── assets/               # Images, fonts, etc.
+│   ├── components/           # React Components (DayCard, TaskList, etc.)
+│   ├── constants/            # Study plan data (planData.ts)
+│   ├── hooks/                # Custom hooks (useLocalStorage.ts)
+│   ├── pages/                # Main pages (Home.tsx, NotFound.tsx)
+│   ├── styles/               # Style files (tailwind.css)
+│   ├── App.tsx               # Main application component
+│   └── main.tsx              # Application entry point (React rendering)
+├── index.html                # Main HTML file
+├── package.json              # Project dependencies and scripts
+├── postcss.config.js         # PostCSS configuration
+├── README.md                 # This file
+├── tailwind.config.js        # Tailwind CSS configuration
+├── tsconfig.json             # TypeScript configuration
+├── vite.config.ts            # Vite configuration
+└── vite-env.d.ts             # Vite environment type definitions
 
-Este projeto está licenciado sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to open issues for suggestions or bug reports, or submit Pull Requests with improvements.
+
+To contribute:
+
+1.  Fork the repository.
+2.  Create a new branch (`git checkout -b feature/your-feature-name`).
+3.  Make your changes and commit them (`git commit -m 'Add some feature'`).
+4.  Push to the branch (`git push origin feature/your-feature-name`).
+5.  Open a Pull Request.
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
