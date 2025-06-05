@@ -73,29 +73,35 @@ To run DatastructHero locally, follow these steps:
 
 ---
 
+---
+
 ## 📂 Project Structure
 
-The project follows a standard Vite + React + TypeScript structure:
-DatastructHero/
-├── public/                   # Static assets
-├── src/
-│   ├── assets/               # Images, fonts, etc.
-│   ├── components/           # React Components (DayCard, TaskList, etc.)
-│   ├── constants/            # Study plan data (planData.ts)
-│   ├── hooks/                # Custom hooks (useLocalStorage.ts)
-│   ├── pages/                # Main pages (Home.tsx, NotFound.tsx)
-│   ├── styles/               # Style files (tailwind.css)
-│   ├── App.tsx               # Main application component
-│   └── main.tsx              # Application entry point (React rendering)
-├── index.html                # Main HTML file
-├── package.json              # Project dependencies and scripts
-├── postcss.config.js         # PostCSS configuration
-├── README.md                 # This file
-├── tailwind.config.js        # Tailwind CSS configuration
-├── tsconfig.json             # TypeScript configuration
-├── vite.config.ts            # Vite configuration
-└── vite-env.d.ts             # Vite environment type definitions
+The project follows a standard Vite + React + TypeScript structure, organized as follows:
 
+```text
+DatastructHero/
+├── public/                   # Static assets (images, fonts, etc., publicly accessible)
+├── src/                      # Main application source code
+│   ├── assets/               # Images, icons, and other assets used internally by components
+│   ├── components/           # Reusable React components (DayCard, TaskList, QuizModal, etc.)
+│   ├── constants/            # Constant data, such as the study plan (planData.ts)
+│   ├── hooks/                # Custom React hooks (e.g., useLocalStorage.ts)
+│   ├── pages/                # Main page components (Home.tsx, NotFound.tsx)
+│   ├── styles/               # Global or base style files (e.g., tailwind.css, index.css)
+│   ├── App.tsx               # Root React application component
+│   └── main.tsx              # Application entry point (where React is rendered into the DOM)
+├── .gitignore                # Specifies intentionally untracked files that Git should ignore
+├── index.html                # Main HTML file served by Vite
+├── package.json              # Project metadata, dependencies, and scripts
+├── postcss.config.js         # PostCSS configuration (used by Tailwind CSS)
+├── README.md                 # This file you are reading
+├── tailwind.config.js        # Tailwind CSS configuration file
+├── tsconfig.json             # TypeScript configuration file
+├── tsconfig.node.json        # TypeScript configuration specific to the Node.js environment (e.g., Vite)
+├── vite.config.ts            # Vite configuration file
+└── vite-env.d.ts             # Type definitions file for Vite environment variables
+```
 ---
 
 ## 🤝 Contributing
