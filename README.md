@@ -99,6 +99,7 @@ DatastructHero/
 ├── tailwind.config.js        # Tailwind CSS configuration file
 ├── tsconfig.json             # TypeScript configuration file
 ├── tsconfig.node.json        # TypeScript configuration specific to the Node.js environment (e.g., Vite)
+├── node_modules
 ├── vite.config.ts            # Vite configuration file
 └── vite-env.d.ts             # Type definitions file for Vite environment variables
 ```
