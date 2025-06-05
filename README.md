@@ -94,12 +94,12 @@ DatastructHero/
 ├── .gitignore                # Specifies intentionally untracked files that Git should ignore
 ├── index.html                # Main HTML file served by Vite
 ├── package.json              # Project metadata, dependencies, and scripts
+├── package-lock.json         # Project metadata, dependencies, and scripts of node modules
 ├── postcss.config.js         # PostCSS configuration (used by Tailwind CSS)
 ├── README.md                 # This file you are reading
 ├── tailwind.config.js        # Tailwind CSS configuration file
 ├── tsconfig.json             # TypeScript configuration file
-├── tsconfig.node.json        # TypeScript configuration specific to the Node.js environment (e.g., Vite)
-├── node_modules
+├── node_modules              # TypeScript configuration specific to the Node.js environment (e.g., Vite)
 ├── vite.config.ts            # Vite configuration file
 └── vite-env.d.ts             # Type definitions file for Vite environment variables
 ```
